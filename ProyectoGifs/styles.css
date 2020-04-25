@@ -1,0 +1,381 @@
+.barra-gradient {
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  box-shadow: 0 1px 0 0 #110038;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  height: 24px; }
+
+button, .btn-blancos, #buscador #div-input .boton-habilitado, .modo-dark .cabecera button {
+  align-items: center;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  color: #110038;
+  box-shadow: 0 1px 0 0 #110038;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  height: 36px;
+  justify-content: center;
+  line-height: 18px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px; }
+  button:hover, .btn-blancos:hover, #buscador #div-input .boton-habilitado:hover, .modo-dark .cabecera button:hover {
+    border: 1px dotted #110038;
+    cursor: pointer; }
+  button:active, .btn-blancos:active, #buscador #div-input .boton-habilitado:active, .modo-dark .cabecera button:active {
+    border: 1px dotted #110038; }
+  button a, .btn-blancos a, #buscador #div-input .boton-habilitado a, .modo-dark .cabecera button a {
+    color: #110038; }
+
+#elegir-tema #menu-temas button, #buscador #div-input button, .menu-opciones div {
+  background: #F0F0F0;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+  #elegir-tema #menu-temas button:hover, #buscador #div-input button:hover, .menu-opciones div:hover {
+    border: 1px dotted #110038;
+    cursor: pointer; }
+  #elegir-tema #menu-temas button:active, #buscador #div-input button:active, .menu-opciones div:active {
+    background: #FFF4FD;
+    border: 1px solid #CCA6C9;
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+
+.buscados button, .sugerencia button {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  overflow: hidden; }
+  .buscados button:hover, .sugerencia button:hover {
+    cursor: pointer; }
+
+#elegir-tema #menu-temas, #buscador, #buscador #div-input input, .menu-opciones, #contenedor_mis_guifos, .contenedor_guifos {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  padding: 0px; }
+
+.modo-dark #elegir-tema #menu, .modo-dark #buscador, .modo-dark #buscador #menu-buscador {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+
+.input, #contador, #subiendo-guifo {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px; }
+
+.barra-gradient p, .buscados p, .menu-opciones div, #crear_guifo p, #crear_guifo ol li, #subiendo-guifo p, #sub-exito p {
+  align-self: center;
+  color: #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  margin: 5px;
+  height: 25px;
+  overflow: hidden; }
+
+body {
+  background-color: #F0F0F0;
+  margin: 0px;
+  padding: 0px; }
+
+.barra-gradient {
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+  overflow: hidden; }
+  .barra-gradient p {
+    overflow: hidden; }
+
+img {
+  cursor: pointer; }
+
+.contenedor {
+  flex-direction: column;
+  padding: 40px; }
+
+.cabecera {
+  align-content: center;
+  display: flex;
+  justify-content: space-between; }
+
+.contenedor-botones {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; }
+
+.btn-blancos {
+  background: #FFFFFF;
+  margin: 5px; }
+  .btn-blancos:hover {
+    background: #f7c9f3; }
+
+.btn-rojo {
+  display: flex;
+  background: #ff6161;
+  margin: 0px; }
+
+.btn-3 {
+  margin-left: 0px;
+  width: 25px; }
+
+#btn-4 {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-left: 20px;
+  text-align: left;
+  width: 100px; }
+  #btn-4:active {
+    border: none; }
+  #btn-4:hover {
+    border: 1px dotted #110038; }
+
+#elegir-tema {
+  flex-direction: column; }
+  #elegir-tema #btn-tema {
+    display: flex; }
+    #elegir-tema #btn-tema #btn-2 {
+      margin-left: 20px;
+      margin-right: 0px; }
+  #elegir-tema #menu-temas {
+    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 0px;
+    width: 165px; }
+    #elegir-tema #menu-temas button {
+      align-self: center; }
+      #elegir-tema #menu-temas button:active {
+        background: #2e32fb;
+        border: 1px solid rgba(51, 53, 143, 0.2);
+        box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+        color: #FFFFFF; }
+
+#buscador {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px 25px 0px; }
+  #buscador div {
+    margin: 5px; }
+  #buscador #div-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px; }
+    #buscador #div-input input {
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+      height: 40px;
+      padding-left: 5px;
+      width: 1200px; }
+    #buscador #div-input button {
+      align-self: center;
+      color: #b4b4b4;
+      display: flex;
+      height: 30px;
+      margin: 5px;
+      width: 100px; }
+      #buscador #div-input button img {
+        align-self: center;
+        border: none;
+        box-shadow: none;
+        height: 16px;
+        width: 16px; }
+    #buscador #div-input .boton-habilitado {
+      height: 30px;
+      margin: 5px;
+      width: 100px; }
+
+.buscados {
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+  margin: 10px;
+  overflow: hidden; }
+  .buscados button {
+    height: 24px;
+    margin: 5px;
+    overflow: hidden; }
+    .buscados button::before {
+      content: '#'; }
+  .buscados p {
+    color: #110038; }
+
+.menu-opciones {
+  display: none;
+  flex-direction: column; }
+  .menu-opciones div {
+    align-items: center;
+    background: #dbdbdb;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #110038;
+    height: 30px;
+    margin: 5px;
+    justify-content: flex-start; }
+
+.input {
+  margin: 25px 0px 25px 0px;
+  width: 1255px; }
+
+.contenedores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  columns: 4; }
+
+.sugerencia {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 324px;
+  margin-top: 5px;
+  width: 300px; }
+  .sugerencia:hover {
+    border: 1px dotted #110038;
+    cursor: pointer; }
+  .sugerencia .giphy-sugerido {
+    height: 324px;
+    width: 300px;
+    position: absolute;
+    z-index: -2; }
+  .sugerencia button {
+    height: 28px;
+    margin: 0px;
+    width: 75px;
+    z-index: 1; }
+    .sugerencia button:hover {
+      border: 1px dotted #110038; }
+
+#contenedorDeBusqueda {
+  display: flex;
+  justify-content: space-between; }
+  #contenedorDeBusqueda img {
+    max-height: 200px;
+    margin: 5px; }
+    #contenedorDeBusqueda img:hover {
+      cursor: pointer;
+      border: 1px dotted #110038; }
+
+#contenedor_mis_guifos {
+  padding: 5px; }
+
+.contenedor_guifos {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 290px 20px 290px;
+  padding: 5px; }
+  .contenedor_guifos video {
+    align-self: center; }
+
+#crear_guifo p {
+  color: #110038;
+  margin-left: 45px; }
+#crear_guifo ol {
+  list-style: none;
+  counter-reset: lista; }
+  #crear_guifo ol li {
+    color: #110038; }
+    #crear_guifo ol li::before {
+      counter-increment: lista;
+      content: counter(lista) ")";
+      font-weight: bold;
+      margin: 5px; }
+
+#contador {
+  text-align: center;
+  width: 100px; }
+
+#subiendo-guifo {
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  #subiendo-guifo p {
+    color: #110038;
+    font-weight: bold; }
+
+#exito {
+  display: none;
+  justify-content: space-around; }
+  #exito button {
+    align-self: flex-end;
+    margin: 5px; }
+
+#sub-exito {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px; }
+  #sub-exito p {
+    color: #110038;
+    font-weight: bold; }
+  #sub-exito button {
+    width: 200px;
+    align-self: flex-end; }
+
+#gif {
+  display: flex; }
+  #gif img {
+    width: 100%; }
+
+#contenedor-2,
+#instrucciones,
+#chequeo,
+#capturando,
+#vista-previa,
+#subiendo,
+#btn-captura {
+  display: none; }
+
+#gif,
+#video {
+  width: 100%; }
+
+.modo-dark .contenedor {
+  background-color: #110038; }
+.modo-dark .barra-gradient {
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+.modo-dark .cabecera button {
+  background: #EE3EFE;
+  border: 0 1px 0 0 #110038;
+  box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: #FFFFFF; }
+  .modo-dark .cabecera button a {
+    color: #FFFFFF; }
+  .modo-dark .cabecera button:hover {
+    border: 1px dotted #ffffff; }
+.modo-dark .cabecera .btn-3 {
+  margin-left: 0px;
+  width: 25px; }
+.modo-dark #gifOF_logo {
+  align-self: center; }
+.modo-dark #elegir-tema #menu {
+  display: none; }
+.modo-dark #buscador #div-input button {
+  border: 0 1px 0 0 #110038;
+  box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: #b4b4b4; }
+  .modo-dark #buscador #div-input button img {
+    margin: 0px; }
+.modo-dark #buscador #menu-buscador div {
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  background: #CCCCCC;
+  display: none;
+  justify-content: flex-start; }
+  .modo-dark #buscador #menu-buscador div p {
+    color: #110038; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+		<title>Proyecto Gif</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/2c36e9b7b1.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="css/estilos.css" />
+	</head>
+	<body>
+		<header>
+			<div class="recSup" id="recSup">
+				<h2>
+					¡Bienvenidos/as a Guifos.com! ————— Donde los gifs están.////// Número
+					de visitas: 100000
+				</h2>
+			</div>
+		</header>
+		<div class="contenedor">
+			<nav>
+				<img id="logoo" class="logotipo" src="imagenes/logo.png" alt="" />
+				<div class="enlaces">
+					<a id="crear" href="crear_guifos.html">Crear Gif</a>
+					<button class="switch" id="switch">
+						<span><i class="far fa-sun"></i></span>
+						<span><i class="fas fa-moon"></i></span>
+					</button>
+					<div class="botonMisgifos" id="botonMisgifos">
+						<a class="botonMisGifosNoActive" href="crear_guifos.html"
+							><span class="subrayado">M</span>is Guifos</a
+						>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="color"></div>
+
+		<div class="container">
+			<form id="search-form" name="formulario" method="GET">
+				<input
+					id="search-input"
+					name="nombre"
+					type="text"
+					placeholder="Escriba su Gifs..."
+				/>
+				<button id="btonn" class="buscar" type="submit">
+					Buscar <i id="lupa" class="fas fa-search"></i>
+				</button>
+			</form>
+		</div>
+
+		<!--local-->
+		<div class="dropdownOpciones" id="dropdownOpciones">
+			<div class="dropdownOpcionesEstilo" id="contGenBusquedasGuardadas"></div>
+		</div>
+
+		<div>
+			<ul id="gif-list"></ul>
+		</div>
+		<div id="results" class="results"></div>
+
+		<div id="tendencia">
+			<div id="tendenciass" class="sugerencia">
+				<p>Hoy te sugerimos: ...</p>
+			</div>
+			<div id="suge"></div>
+
+			<div class="imagenesSugeridas">
+				<div class="imagenCont">
+					<div class="recuadroSuperiorImagen fila centerY">
+						<p>#Camaro</p>
+					</div>
+
+					<div class="imagenCont2">
+						<img
+							class="imgr"
+							src="https://media0.giphy.com/media/8HHIvBCrQRlTy/giphy.gif?cid=02581cc97cf17f612bf0dbad9e4caddd5fc23e70005a49ab&rid=giphy.gif"
+							alt="Camaro"
+						/>
+						<div class="verMasSobreImagen centerY centerX">
+							<p id="camar">Ver más...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagenCont">
+					<div class="recuadroSuperiorImagen fila centerY">
+						<p>#Video Games</p>
+					</div>
+
+					<div class="imagenCont2">
+						<img
+							class="imgr"
+							src="https://media0.giphy.com/media/3o7abGQa0aRJUurpII/giphy.gif?cid=02581cc9732c8c1f37f8699417d39db97704bbe68bdf82d0&rid=giphy.gif"
+							alt="Video Games"
+						/>
+						<div class="verMasSobreImagen centerY centerX">
+							<p id="videoG">Ver más...</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="imagenCont">
+					<div class="recuadroSuperiorImagen fila centerY">
+						<p>#Running</p>
+					</div>
+
+					<div class="imagenCont2">
+						<img
+							class="imgr"
+							src="https://media.giphy.com/media/24cbiZwzSW8Kc/giphy.gif"
+							alt="Running"
+						/>
+						<div class="verMasSobreImagen centerY centerX">
+							<p id="runni">Ver más...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div id="sugerencia" class="sugerencias">
+				<p>Tendencias</p>
+			</div>
+
+			<div id="resultado" class="resultado"></div>
+		</div>
+
+		<!--Video-->
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
